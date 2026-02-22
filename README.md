@@ -37,7 +37,7 @@ app/
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd lennert
+   cd webhook
    ```
 
 2. Create and activate a virtual environment:
@@ -77,7 +77,7 @@ The root URL (`/`) also automatically redirects to the Swagger documentation for
 
 ### Receive a Webhook
 
-**Endpoint**: `POST /webhooks/webhook`
+**Endpoint**: `POST /webhook`
 
 **Headers**:
 - `x-signature`: Must match the `SHARED_SECRET` in your configuration.
@@ -92,4 +92,4 @@ The root URL (`/`) also automatically redirects to the Swagger documentation for
 
 ### View All Webhooks
 
-**Endpoint**: `GET /webhooks/all`
+**Endpoint**: `GET /all`
